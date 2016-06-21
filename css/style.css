@@ -71,13 +71,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 .banner .row {
 	text-align: center;
 }
-#hero1 {
+.hero1 {
 	font-size: 27px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-#hero2 {
+.hero2 {
 	font-size: 18px;
 }
 .banner h1 {
