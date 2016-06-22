@@ -106,9 +106,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 }
 .hero-img1 {
 	background-image: url(../images/dance.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 1%;
+    background-size: cover;
 }
 .main-slide { position:relative; height:100%; }
 .main-slide .slide-intro {position:absolute; top:50%; max-width:875px; left:50%;  transform:translateX(-50%) translateY(-50%); padding-top:100px; }
@@ -303,13 +303,16 @@ ul.dropdown-menu {
 	padding-right: 20px;
 }
 .zeeone-slider h2 {
-	font-size: 30px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: left;
-	margin-top: 74px;
-	padding-right: 20px;
+    font-size: 27px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 74px;
+    padding-right: 20px;
+    font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 30px;
 }
 .zeeone-slider .arrows {
 	top: 50%;
@@ -327,7 +330,7 @@ ul.dropdown-menu {
 .zeeone-slider .slick-dots {
 	position: absolute;
 	bottom: 0px;
-	left: 50%;
+	left: 52%;
 	transform: translateX(-50%);
 	width: 360px;
 	margin-bottom:20px;
@@ -563,6 +566,7 @@ a:focus, a:hover {
 }
 .layer {
 	background-color: rgba(245, 0, 164, 0.7);
+	width: 100%;
 }
 .hero-img2 {
 	background-image: url(../images/blood-m.jpg);
@@ -653,4 +657,22 @@ a.scrolldown {
 		width: 32px;
 		height: 32px;
 	}
+}
+.gradientImg:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 15px;
+    right: 0px;
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, .5),rgba(0, 0, 0, 0)
+    );;
+    transition: all .3s linear;
+
+}
+.firstSlide{
+    text-align: center!important;
 }
